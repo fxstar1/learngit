@@ -17,4 +17,18 @@ git commit -m ""
 ------------------------------------------------------------
 git日志
 :r!git log --pretty=oneline
+git版本回退
+[:git reset --hard *****]
+git版本回退记录
+:r!git reflog
+------------------------------------------------------------
+工作区 working directory
+版本库 工作区隐藏目录.git
+暂存区 存放于版本库中，主分支master，指向master的第一个指针是HEAD
+git add将文件添加到暂存区
+git commit将暂存区所有内容提交到当前分支
+------------------------------------------------------------
+丢弃工作区的修改
+[:r!git checkout -- file]
+[:r!git reset HEAD file]
 
