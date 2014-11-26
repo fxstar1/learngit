@@ -34,5 +34,70 @@ git commit将暂存区所有内容提交到当前分支
 ------------------------------------------------------------
 版本库中删除文件
 [:r!git rm file]
-
+------------------------------------------------------------
+关联远程库
+[:r!git remote add origin git@server-name:path/repo-name.git]
+第一次推送
+[:r!git push -u origin master]
+推送
+[:r!git push origin master]
+同步到本地
+[:r!git clone git@github.com:michaelliao/gitskills.git]
+------------------------------------------------------------
+创建dev分支,并切换至dev
+git checkout -b dev
+创建dev分支
+git branch dev
+切换至dev分支
+git checkout dev
+查看当前分支
+git branch
+合并到master分支
+git merge dev
+删除dev分支
+git branch -d dev
+------------------------------------------------------------
+分支合并图
+[:r!git log --graph]
+禁用Fast forward
+[:r!git merge --no-ff -m "merge with no-ff" dev]
+分支策略
+http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758410364457b9e3d821f4244beb0fd69c61a185ae0000
+------------------------------------------------------------
+保存现场
+[:r!git stash]
+查看现场
+[:r!git stash list]
+恢复现场
+[:r!git stash pop]
+------------------------------------------------------------
+丢弃一个没有被合并过的分支
+[:r!git branch -D <name>]
+------------------------------------------------------------
+查看远程库
+:r!git remote -v
+推送分支
+:r!git push origin master
+[:r!git push origin dev]
+抓取远程
+git pull
+------------------------------------------------------------
+标签
+[:r!git tag ***] [:r!git tag -d ***]
+查看历史提交的commit id
+git log --pretty=oneline --abbrev-commit
+查看标签信息
+git show <tagname>
+PGP签名
+http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001376951758572072ce1dc172b4178b910d31bc7521ee4000
+推送标签
+git push origin --tags
+------------------------------------------------------------
+Git显示颜色
+:r!git config --global color.ui true
+------------------------------------------------------------
+来源
+http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137586810169600f39e17409a4358b1ac0d3621356287000
+git cheat sheet
+http://www.git-tower.com/blog/assets/2013-05-22-git-cheat-sheet/cheat-sheet-large01.png
 
