@@ -14,5 +14,7 @@ git commit -m ""
 :r!git status
 查看文件修改内容
 :r!git  diff user.fiks
-
+------------------------------------------------------------
+git日志
+:r!git log --pretty=oneline
 
