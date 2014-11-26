@@ -1,0 +1,12 @@
+
+:r!git init
+
+:r!git add readme.txt
+:r!git commit -m "wrote a readme file"
+
+git添加文件
+git add
+git添加注释
+git commit -m ""
+
+
