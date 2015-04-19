@@ -58,7 +58,7 @@ git merge dev
 git branch -d dev
 ------------------------------------------------------------
 分支合并图
-[:r!git log --graph]
+:r!git log --graph
 禁用Fast forward
 [:r!git merge --no-ff -m "merge with no-ff" dev]
 分支策略
@@ -85,7 +85,7 @@ git pull
 标签
 [:r!git tag ***] [:r!git tag -d ***]
 查看历史提交的commit id
-git log --pretty=oneline --abbrev-commit
+:r!git log --pretty=oneline --abbrev-commit
 查看标签信息
 git show <tagname>
 PGP签名
